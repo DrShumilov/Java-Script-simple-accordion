@@ -1,0 +1,47 @@
+html {
+	background-color: #dce7eb;
+}
+main {
+	max-width: 1000px;
+	display: flex;
+	flex-direction: column;
+	margin: 100px auto;
+}
+
+.accordion:first-child {
+	border-radius: 6px 6px 0 0;
+}
+.last-ch {
+	border-radius: 0 0 6px 6px;
+}
+.last-ch.active {
+	border-radius: 0 0 0 0;
+}
+
+.accordion {
+	background-color: #fefffa;
+	color: #ff6873;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	transition: 0.4s;
+}
+.accordion.active,
+.accordion:hover {
+	background-color: #F2F4EC;
+}
+
+.panel {
+	padding: 20px 18px;
+	background-color: #fefffa;
+	display: none;
+}
+.panel.show {
+	display: block;
+}
+.panel p {
+	margin: 0;
+	color: #ff6873;
+}
